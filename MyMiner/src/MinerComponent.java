@@ -29,10 +29,10 @@ public class MinerComponent extends JComponent {
 	private int m;
 	private int mineCount;
 	
-	protected AppearanceObject appereance;
+	protected AppearanceObject appearance;
 	
-	public MinerComponent(AppearanceObject appereance, int k, int m, int mineCount) {
-		this.appereance = appereance;
+	public MinerComponent(AppearanceObject appearance, int k, int m, int mineCount) {
+		this.appearance = appearance;
 		this.mineCount = mineCount;
 		this.m = m;
 		this.k = k;
@@ -72,7 +72,7 @@ public class MinerComponent extends JComponent {
 	}
 	
 	public AppearanceObject getAppereance() {
-		return appereance;
+		return appearance;
 	}
 	
 	public int getTime() {
@@ -93,7 +93,7 @@ public class MinerComponent extends JComponent {
 	}
 	
 	protected GameField createGameField() {
-		return new GameField(appereance, k, m, mineCount);
+		return new GameField(appearance, k, m, mineCount);
 	} 
 	
 	
@@ -113,7 +113,7 @@ public class MinerComponent extends JComponent {
 		c.weighty = 0.2;
 		leftPanel = new JPanel();
 		gbl.setConstraints(leftPanel, c);
-		leftPanel.setBackground(appereance.getPanelsColor());
+		leftPanel.setBackground(appearance.getPanelsColor());
 		add(leftPanel);
 		
 		c =  new GridBagConstraints();
@@ -141,7 +141,7 @@ public class MinerComponent extends JComponent {
 		c.weighty = 0.2;
 		rightdPanel = new JPanel();
 		gbl.setConstraints(rightdPanel, c);
-		rightdPanel.setBackground(appereance.getPanelsColor());
+		rightdPanel.setBackground(appearance.getPanelsColor());
 		add(rightdPanel);
 		
 		c.anchor = GridBagConstraints.NORTH; 
@@ -181,7 +181,7 @@ public class MinerComponent extends JComponent {
 		c.weighty = 0.0;
 		middlePanel = new JPanel();
 		gbl.setConstraints(middlePanel, c);
-		middlePanel.setBackground(appereance.getPanelsColor());
+		middlePanel.setBackground(appearance.getPanelsColor());
 		add(middlePanel);
 		
 		c.anchor = GridBagConstraints.NORTH; 

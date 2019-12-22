@@ -5,13 +5,13 @@ import javax.swing.event.AncestorListener;
 
 public class GameField extends JPanel {
 	private GameManager manager;
-	protected AppearanceObject appereance;
+	protected AppearanceObject appearance;
 	private int k;
 	private int m;
 	private int mineCount;
 	
-	public GameField(AppearanceObject appereance, int k, int m, int mineCount) {
-		this.appereance = appereance;
+	public GameField(AppearanceObject appearance, int k, int m, int mineCount) {
+		this.appearance = appearance;
 		this.mineCount = mineCount;
 		this.m = m;
 		this.k = k;
@@ -41,7 +41,7 @@ public class GameField extends JPanel {
 	public GameManager getGameManager() { return manager; }
 	
 	protected void ñreateGameManager() {
-		manager = new GameManager(this, appereance, k, m, mineCount);
+		manager = new GameManager(this, appearance, k, m, mineCount);
 	}
 	
 	public void updateMinesCount() {

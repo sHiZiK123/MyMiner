@@ -46,13 +46,13 @@ public class MainWindow {
 	}
 	
 	AppearanceObject setAppearance() {
-		AppearanceObject appereance = new AppearanceObject();
+		AppearanceObject appearance = new AppearanceObject();
 		//Uncomment to change appearance
-		//appereance.setCellColor(Color.blue);
-		//appereance.setHoveredCellColor(Color.yellow);
-		//appereance.setPanelsColor(Color.DARK_GRAY);
-		appereance.setfieldLineColor(Color.GRAY);
-		return appereance;
+		//appearance.setCellColor(Color.blue);
+		//appearance.setHoveredCellColor(Color.yellow);
+		//appearance.setPanelsColor(Color.DARK_GRAY);
+		appearance.setfieldLineColor(Color.GRAY);
+		return appearance;
 		
 	}
 }
